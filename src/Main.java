@@ -1,14 +1,31 @@
 import java.util.*;
+class Bogie {
+    String name;
+    int capacity;
+    Bogie(String name, int capacity) {
+        this.name = name;
+        this.capacity = capacity;
+    }
+    public String toString() {
+        return name + " - Capacity: " + capacity;
+    }
+}
 public class Main {
     public static void main(String[] args) {
         System.out.println(" Train Consist Management App ");
-        LinkedHashSet<String> train = new LinkedHashSet<>();
-        train.add("Engine");
-        train.add("Sleeper");
-        train.add("Cargo");
-        train.add("Guard");
-        train.add("Sleeper");
-        System.out.println("Train Formation: " + train);
-
+        List<Bogie> bogies = new ArrayList<>();
+        bogies.add(new Bogie("Sleeper", 72));
+        bogies.add(new Bogie("AC Chair", 56));
+        bogies.add(new Bogie("First Class", 40));
+        bogies.add(new Bogie("General", 90));
+        System.out.println("\nBefore Sorting:");
+        for (Bogie b : bogies) {
+            System.out.println(b);
+        }
+        bogies.sort(Comparator.comparingInt(b -> b.capacity));
+        System.out.println("\nAfter Sorting by Capacity:");
+        for (Bogie b : bogies) {
+            System.out.println(b);
+        }
     }
 }
