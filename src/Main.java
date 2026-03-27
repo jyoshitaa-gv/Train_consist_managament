@@ -1,6 +1,14 @@
-void main() {
-    IO.println(String.format("Hello and welcome!"));
-    for (int i = 1; i <= 5; i++) {
-        IO.println("i = " + i);
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(" Train Consist Management App ");
+        List<String> bogies = new ArrayList<>();
+        bogies.add("Sleeper");
+        bogies.add("AC Chair");
+        bogies.add("First Class");
+        System.out.println("Bogies after adding: " + bogies);
+        bogies.remove("AC Chair");
+        System.out.println("After removing AC Chair: " + bogies);
+        System.out.println("Is Sleeper present? " + bogies.contains("Sleeper"));
     }
 }
