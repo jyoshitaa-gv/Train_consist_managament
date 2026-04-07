@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/STEP3.iml" filepath="$PROJECT_DIR$/STEP3.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/TrainConsistManagement App.iml" filepath="$PROJECT_DIR$/TrainConsistManagement App.iml" />
+>>>>>>> e3f4bbc (first)
     </modules>
   </component>
 </project>
